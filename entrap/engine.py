@@ -4,7 +4,6 @@ import multiprocessing
 from typing import Dict, List, Optional, Tuple
 from scipy.spatial import cKDTree
 from joblib import Parallel, delayed
-from joblib.externals.loky import get_reusable_executor
 
 from entrap.constants import RIDGE_EPSILON, K_MIN
 from entrap.utils import validate_metric, optimize_memory
@@ -280,8 +279,6 @@ class Geometric_Persistence_Entropy_Engine:
             )
             for cid in sorted_cluster_ids
         )
-
-        get_reusable_executor().shutdown(wait=True)
         
         cluster_evaluations = {}
         tracking_data_list = []
