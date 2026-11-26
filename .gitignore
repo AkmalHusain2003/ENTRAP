@@ -1,0 +1,25 @@
+# Python bytecode and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.venv/
+venv/
+.env
+
+# Build products and generated Cython files
+build/
+dist/
+*.egg-info/
+*.so
+*.pyd
+*.dll
+*.dylib
+*.c
+
+# Local benchmark and demo outputs
+demo_clustering.png
+*.prof

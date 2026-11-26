@@ -1,0 +1,7 @@
+numpy>=1.23
+scipy>=1.9
+scikit-learn>=1.1
+Cython>=3.0
+leidenalg>=0.10
+igraph>=0.11
+matplotlib>=3.5

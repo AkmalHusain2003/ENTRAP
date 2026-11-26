@@ -1,0 +1,13 @@
+include README.md
+include CONTRIBUTING.md
+include VALIDATION.md
+include DEVELOPMENT_VALIDATION.md
+include VERSION.txt
+include entrap/_topology.pyx
+include entrap/_density.pyx
+include entrap/_null.pyx
+include entrap/_halo.pyx
+include entrap/_membership.pyx
+recursive-include tests *.py
+recursive-include benchmarks *.py
+recursive-include docs *.md
